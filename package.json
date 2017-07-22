@@ -2,14 +2,18 @@
   "name": "music-player",
   "version": "0.0.1",
   "license": "MIT",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href $npm_package_config_baseurl",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "electron": "./node_modules/.bin/electron ."
+  },
+  "config": {
+    "baseurl": "./"
   },
   "private": true,
   "dependencies": {
@@ -26,7 +30,7 @@
     "dotenv": "^4.0.0",
     "font-awesome": "^4.7.0",
     "primeng": "^4.1.1",
-    "rxjs": "^5.4.1",
+    "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

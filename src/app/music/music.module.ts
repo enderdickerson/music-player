@@ -11,8 +11,8 @@ import { MusicSearchComponent } from './music-search/music-search.component';
 import { MusicPlayerComponent } from './music-player/music-player.component';
 import { MusicDetailsComponent } from './music-details/music-details.component';
 import { MusicProgressComponent } from './music-progress/music-progress.component';
-// import { MusicService } from './shared/music.service';
-// import { ApiService } from './shared/api.service';
+import { MusicService } from './shared/music.service';
+import { ApiService } from './shared/api.service';
 
 @NgModule({
     imports: [
@@ -34,8 +34,8 @@ import { MusicProgressComponent } from './music-progress/music-progress.componen
       MusicProgressComponent
     ],
     providers: [
-      // ApiService,
-      // MusicService
+      ApiService,
+      MusicService
     ],
 })
 
